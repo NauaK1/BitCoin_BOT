@@ -30,7 +30,7 @@ def erro(ws, erro):
 
 def ao_receber_mensagem(ws, msg):
     msg = json.loads(msg)
-    print(msg["data"]["price"]) #preço
+    print(f"Preço: ${msg["data"]["price"]}") #preço
 
 
 def client():
